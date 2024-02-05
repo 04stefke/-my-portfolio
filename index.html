@@ -14,15 +14,15 @@
             <span class="name">Stefan</span> Jovanovic
         </div>
         <ul class="nav-links">
-            <li class="link"><a href="3">Home</a></li>
-            <li class="link"><a href="3">About Me</a></li>
-            <li class="link"><a href="3">My Experiance</a></li>
-            <li class="link"><a href="3">My Project</a></li>
-            <li class="link"><a href="3">Contact me</a></li>
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#about">About Me</a></li>
+            <li class="link"><a href="#experiance">My Experiance</a></li>
+            <li class="link"><a href="#project">My Project</a></li>
+            <li class="link"><a href="#contact">Contact me</a></li>
         </ul>
     </nav>
 
-    <header class="header">
+    <header id="home" class="header">
         <!-- <span class="image-container">
             <img src="images/portait.jpg" >
         </span> -->
@@ -41,7 +41,7 @@
         </div>
     </header>
 
-    <section class="about-me">
+    <section id="about" class="about-me">
         <p class="aboveTitle">Get To Know More</p>
         <div class="title"><h3>About Me</h3></div>
         <div class="about-me-container">
@@ -62,9 +62,11 @@
         
     </section>
 
-    <section class="experiance-container">
-        <p class="aboveTitle">Explore my</p>
-        <h3 class="title">Experiances</h3>
+    <section id="experiance"  class="experiance-container">
+        <div>
+            <p class="aboveTitle">Explore my</p>
+            <h3 class="title">Experiances</h3>
+        </div>
         <div class="card-experiance">
             <p class="skill"><i class="fa-solid fa-check"></i> HTML5 <i class="fa-brands fa-html5"></i></p>
             <p class="skill"><i class="fa-solid fa-check"></i> CSS3 <i class="fa-brands fa-css3"></i></p>
@@ -77,7 +79,7 @@
         </div>
     </section>
 
-    <section class="project">
+    <section id="project"  class="project">
         <p class="aboveTitle">Browse My Recent</p>
         <h3 class="title">Projects</h3>
         <div class="project-card-container">
@@ -85,66 +87,81 @@
                 <img src="/images/RedditApp.png">
                 <p>Reddit Clone App</p>
                 <div>
-                    <button class="btn">
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                    </button>              
-                    <button class="btn">
-                        <a href="">Live Demo</a>
-                    </button>
+                    <a href=""><button class="btn cardBtn">
+                        <i class="fa-brands fa-github"></i>
+                    </button></a>              
+                    <a href=""><button class="btn cardBtn">
+                        Live Demo
+                    </button></a>
                 </div>
             </div>
             <div class="card">
                 <img src="/images/ToDoApp.png">
                 <p>ToDo App</p>
                 <div>
-                    <button class="btn">
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                    </button>              
-                    <button class="btn">
-                        <a href="">Live Demo</a>
-                    </button>
+                    <a href="">
+                        <button class="btn cardBtn">
+                            <i class="fa-brands fa-github"></i>
+                        </button> 
+                    </a>             
+                    <a href="">
+                        <button class="btn cardBtn">
+                            Live Demo
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="card">
                 <img src="/images/WeatherApp.png">
                 <p>Weather App</p>
                 <div>
-                    <button class="btn">
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                    </button>              
-                    <button class="btn">
-                        <a href="">Live Demo</a>
-                    </button>
+                    <a href="">
+                        <button class="btn cardBtn">
+                            <i class="fa-brands fa-github"></i>
+                        </button>
+                    </a>              
+                    <a href="">
+                        <button class="btn cardBtn">
+                            Live Demo
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="card">
                 <img src="/images/E-Commerce.png">
                 <p>E-Commerce Home Page</p>
                 <div>
-                    <button class="btn">
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                    </button>
-                    <button class="btn">
-                        <a href="">Live Demo</a>
-                    </button>
+                    <a href="">
+                        <button class="btn cardBtn">
+                        <i class="fa-brands fa-github"></i>
+                        </button>
+                    </a>
+                    <a href="">
+                        <button class="btn cardBtn">
+                            Live Demo
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="card">
                 <img src="">
                 <p>Quiz App</p>
                 <div>
-                    <button class="btn">
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                    </button>              
-                    <button class="btn">
-                        <a href="">Live Demo</a>
-                    </button>
+                    <a href=""><button class="btn cardBtn">
+                        <i class="fa-brands fa-github"></i>
+                        </button>
+                    </a>            
+                    <a href="">
+                        <button class="btn cardBtn">
+                            Live Demo
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div>
             <p class="aboveTitle">Get in Touch</p>
             <h3 class="title">Contact Me</h3>
@@ -156,5 +173,15 @@
         </div>
     </section>
 
+    <footer class="footer">
+        <ul class="nav-links">
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#about">About Me</a></li>
+            <li class="link"><a href="#experiance">My Experiance</a></li>
+            <li class="link"><a href="#project">My Project</a></li>
+            <li class="link"><a href="#contact">Contact me</a></li>
+        </ul>
+        <p>Copyright©2024 Stefan Jovanovic. All Right Reserved.</p>
+    </footer>
 </body>
 </html>
