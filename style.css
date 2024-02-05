@@ -72,12 +72,14 @@ nav .nav-name{
     gap: 2rem;
     list-style: none;
 }
+
 .footer-link,
 .link a{
     color: #000;
     font-size: 18px;
     position: relative;
 }
+
 .footer-link::after,
 .link a::after{
     position: absolute;
@@ -89,6 +91,7 @@ nav .nav-name{
     left: 0;
     transition: all 0.3s ease;
 }
+
 .footer-link:hover::after,
 .link a:hover::after{
     width: 70%;
@@ -208,6 +211,7 @@ nav .nav-name{
     font-size: 20px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+    color: #000;
 }
 
 .header-contact i:hover{
