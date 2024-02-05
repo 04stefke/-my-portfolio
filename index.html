@@ -13,13 +13,22 @@
         <div class="nav-name">
             <span class="name">Stefan</span> Jovanovic
         </div>
-        <ul class="nav-links">
-            <li class="link"><a href="#home">Home</a></li>
-            <li class="link"><a href="#about">About Me</a></li>
-            <li class="link"><a href="#experiance">My Experiance</a></li>
-            <li class="link"><a href="#project">My Project</a></li>
-            <li class="link"><a href="#contact">Contact me</a></li>
-        </ul>
+        <div class="hidden-menu">
+            <div class="nav-items">
+                <input type="checkbox" class="toggle-menu">
+                <div class="hamburger"></div>
+                <div class="nav-links">
+                    <li class="link"><a href="#home">Home</a></li>
+                    <li class="link"><a href="#about">About Me</a></li>
+                    <li class="link"><a href="#experiance">My Experiance</a></li>
+                    <li class="link"><a href="#project">My Project</a></li>
+                    <li class="link"><a href="#contact">Contact me</a></li>
+                </div>          
+
+            </div>
+        </div>
+
+        
     </nav>
 
     <header id="home" class="header">
@@ -82,82 +91,84 @@
     <section id="project"  class="project">
         <p class="aboveTitle">Browse My Recent</p>
         <h3 class="title">Projects</h3>
-        <div class="project-card-container">
-            <div class="card">
-                <img src="/images/RedditApp.png">
-                <p>Reddit Clone App</p>
-                <div>
-                    <a href=""><button class="btn cardBtn">
-                        <i class="fa-brands fa-github"></i>
-                    </button></a>              
-                    <a href=""><button class="btn cardBtn">
-                        Live Demo
-                    </button></a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/images/ToDoApp.png">
-                <p>ToDo App</p>
-                <div>
-                    <a href="">
-                        <button class="btn cardBtn">
+        <div class="project-wrapper">
+            <div class="project-card-container">
+                <div id="card-1" class="card">
+                    <img src="/images/RedditApp.png">
+                    <p>Reddit Clone App</p>
+                    <div class="contact-btn">
+                        <a href=""><button class="btn cardBtn">
                             <i class="fa-brands fa-github"></i>
-                        </button> 
-                    </a>             
-                    <a href="">
-                        <button class="btn cardBtn">
+                        </button></a>              
+                        <a href=""><button class="btn cardBtn">
                             Live Demo
-                        </button>
-                    </a>
+                        </button></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="/images/WeatherApp.png">
-                <p>Weather App</p>
-                <div>
-                    <a href="">
-                        <button class="btn cardBtn">
+                <div id="card-2" class="card">
+                    <img src="/images/ToDoApp.png">
+                    <p>ToDo App</p>
+                    <div class="contact-btn">
+                        <a href="">
+                            <button class="btn cardBtn">
+                                <i class="fa-brands fa-github"></i>
+                            </button> 
+                        </a>             
+                        <a href="">
+                            <button class="btn cardBtn">
+                                Live Demo
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div id="card-3" class="card">
+                    <img src="/images/WeatherApp.png">
+                    <p>Weather App</p>
+                    <div class="contact-btn">
+                        <a href="">
+                            <button class="btn cardBtn">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>              
+                        <a href="">
+                            <button class="btn cardBtn">
+                                Live Demo
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div id="card-4" class="card">
+                    <img src="/images/E-Commerce.png">
+                    <p>E-Commerce Home Page</p>
+                    <div class="contact-btn">
+                        <a href="">
+                            <button class="btn cardBtn">
                             <i class="fa-brands fa-github"></i>
-                        </button>
-                    </a>              
-                    <a href="">
-                        <button class="btn cardBtn">
-                            Live Demo
-                        </button>
-                    </a>
+                            </button>
+                        </a>
+                        <a href="">
+                            <button class="btn cardBtn">
+                                Live Demo
+                            </button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="/images/E-Commerce.png">
-                <p>E-Commerce Home Page</p>
-                <div>
-                    <a href="">
-                        <button class="btn cardBtn">
-                        <i class="fa-brands fa-github"></i>
-                        </button>
-                    </a>
-                    <a href="">
-                        <button class="btn cardBtn">
-                            Live Demo
-                        </button>
-                    </a>
+                <div id="card-5" class="card">
+                    <img src="">
+                    <p>Quiz App</p>
+                    <div class="contact-btn">
+                        <a href=""><button class="btn cardBtn">
+                            <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>            
+                        <a href="">
+                            <button class="btn cardBtn">
+                                Live Demo
+                            </button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="">
-                <p>Quiz App</p>
-                <div>
-                    <a href=""><button class="btn cardBtn">
-                        <i class="fa-brands fa-github"></i>
-                        </button>
-                    </a>            
-                    <a href="">
-                        <button class="btn cardBtn">
-                            Live Demo
-                        </button>
-                    </a>
-                </div>
-            </div>
+            </div> 
         </div>
     </section>
 
@@ -174,12 +185,12 @@
     </section>
 
     <footer class="footer">
-        <ul class="nav-links">
-            <li class="link"><a href="#home">Home</a></li>
-            <li class="link"><a href="#about">About Me</a></li>
-            <li class="link"><a href="#experiance">My Experiance</a></li>
-            <li class="link"><a href="#project">My Project</a></li>
-            <li class="link"><a href="#contact">Contact me</a></li>
+        <ul class="footer-links">
+            <li class="footer-link"><a href="#home">Home</a></li>
+            <li class="footer-link"><a href="#about">About Me</a></li>
+            <li class="footer-link"><a href="#experiance">My Experiance</a></li>
+            <li class="footer-link"><a href="#project">My Project</a></li>
+            <li class="footer-link"><a href="#contact">Contact me</a></li>
         </ul>
         <p>Copyright©2024 Stefan Jovanovic. All Right Reserved.</p>
     </footer>
