@@ -232,3 +232,34 @@ nav .nav-links{
     align-items: center;
     gap: 2rem;
 }
+
+/* Project container */
+
+.project{
+    height: 100%;
+}
+
+.card{
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    gap: 1rem;
+    box-shadow: 4px 4px 5px 1px rgb(112, 112, 112)
+}
+
+.card img{
+    object-fit: cover;
+    width: 250px;
+    height: 350px;
+}
+
+.project-card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
