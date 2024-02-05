@@ -254,7 +254,7 @@ nav .nav-links{
     flex-direction: column;
     height: 500px;
     gap: 1rem;
-    box-shadow: 4px 4px 5px 1px rgb(112, 112, 112)
+    box-shadow: 4px 4px 5px 1px rgb(112, 112, 112);
 }
 
 .card img{
@@ -287,4 +287,5 @@ nav .nav-links{
     border-radius: 20px;
     gap: 3rem;
     font-size: 18px;
+    box-shadow: 4px 4px 5px 1px rgb(112, 112, 112)
 }
