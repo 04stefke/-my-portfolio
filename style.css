@@ -25,6 +25,10 @@ section{
     
 }
 
+.title{
+    text-align: center;
+    margin-bottom: 5rem;
+}
 /* Button */
 
 .btn{
@@ -144,4 +148,63 @@ nav .nav-links{
 .header-contact i:hover{
     background-color: #141010;
     color: #fff;
+}
+
+/* About me  */
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.about-me-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.description-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+
+}
+
+.my-progress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.education, .experiance{
+    font-size: 12px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px;
+    cursor: default;
+}
+
+.short-description{
+    background-color: lightgray;
+    padding: 2rem 3rem;
+    width: 632px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px;
+    font-size: 14px;
+    cursor: default;
+}
+
+.education:hover, .experiance:hover, .short-description:hover{
+    box-shadow: 0px 0px 7px 2px;
 }
