@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+/* root and dark themes */
+
+:root{
+    --bgc: #fff;
+    --fc: rgb(0, 0, 0);
+    --btn-bg-hover: #fff;
+    --btn-bg-hover: #3a3939;
+    --btn-c: #000;
+    --btn-c-hover: #fff;
+    --border-c: rgb(20, 16, 20); 
+    --shadow-c: rgb(211, 211, 211);
+    --bx-shadow: rgb(112, 112, 112);
+}
+
+.darkmode{
+    --bgc: #333;
+    --fc: rgb(255, 255, 255);
+    --btn-bg: #333;
+    --btn-bg-hover: #d1d1d1;
+    --btn-c: #fff;
+    --btn-c-hover: #000000;
+}
+
 /* General styles */
 *{
     margin: 0;
@@ -12,6 +35,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    background-color: var(--bgc);
 }
 
 a{
@@ -27,26 +51,39 @@ section{
 .title{
     text-align: center;
     margin-bottom: 5rem;
+    color: var(--fc);
 }
 
 .aboveTitle{
     text-align: center;
     margin-bottom: 1rem;
+    color: var(--fc);
 }
 /* Button */
 
 .btn{
     padding: 1rem 2rem;
     border-radius: 15px;
-    background-color: white;
-    border: 1px solid #141010;
+    color: var(--btn-c);
+    background-color: var(--btn-bg);
+    border: 1px solid var(--border-c);
     transition: all 0.1s ease;
     cursor: pointer;
 }
 
 .btn:hover{
-    color: white;
-    background-color: #141010;
+    color: var(--btn-c-hover);
+    background-color: var(--btn-bg-hover);
+}
+
+.cardBtn{
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-c-hover);
+}
+
+.cardBtn:hover{
+    background-color: var(--btn-bg);
+    color: var(--btn-c);
 }
 
 /* Navbar styles */
@@ -60,6 +97,7 @@ section{
 }
 
 nav .nav-name{
+    color: var(--fc);
     font-size: 24px;
     font-weight: 600;
 }
@@ -72,17 +110,17 @@ nav .nav-name{
     list-style: none;
 }
 
-.footer-link,
+.footer-link a,
 .link a{
-    color: #000;
+    color: var(--fc);
     font-size: 18px;
     position: relative;
 }
 
-.footer-link::after,
+.footer-link a::after,
 .link a::after{
     position: absolute;
-    background-color: #000;
+    background-color: var(--fc);
     content: '';
     height: 2px;
     width: 0;
@@ -91,7 +129,7 @@ nav .nav-name{
     transition: all 0.3s ease;
 }
 
-.footer-link:hover::after,
+.footer-link a:hover::after,
 .link a:hover::after{
     width: 70%;
 }
@@ -107,7 +145,7 @@ nav .nav-name{
     position: relative;
     width: 30px;
     height: 4px;
-    background-color: #000;
+    background-color: var(--fc-1);
     border-radius: 10px;
     cursor: pointer;
     z-index: 2;
@@ -120,7 +158,7 @@ nav .nav-name{
     position: absolute;
     height: 4px;
     right: 0;
-    background-color: #000;
+    background-color: var(--fc-1);
     border-radius: 10px;
     transition: 0.3s;
 }
@@ -168,7 +206,7 @@ nav .nav-name{
 
 .hidden-menu input:checked ~ .nav-links{
     right: 0;
-    box-shadow: 0 5px 2px 1px lightgray;
+    box-shadow: 0 5px 2px 1px var(--bx-shadow);
 }
 
 /* Header */
@@ -179,6 +217,7 @@ nav .nav-name{
     justify-content: center;
     gap: 10rem;
     height: 100vh;
+    color: var(--fc);
 }
 
 .image-container img{
@@ -204,18 +243,18 @@ nav .nav-name{
 }
 
 .header-contact i{
-    border: 1px solid #141010;
+    border: 1px solid var(--btn-bg-hover);
     border-radius: 100%;
     padding: 0.6rem;
     font-size: 20px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
-    color: #000;
+    color: var(--btn-c);
 }
 
 .header-contact i:hover{
-    background-color: #141010;
-    color: #fff;
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-c-hover);
 }
 
 /* About me  */
@@ -251,7 +290,7 @@ nav .nav-name{
 
 .education, .experiance{
     font-size: 14px;
-    background-color: lightgray;
+    background-color: var(--shadow-c);
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -259,24 +298,24 @@ nav .nav-name{
     height: 100px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 4px 4px 5px 1px rgb(112, 112, 112);
+    box-shadow: 4px 4px 5px 1px var(--bx-shadow);
     cursor: default;
     transition: all 0.2s ease;
 }
 
 .short-description{
-    background-color: lightgray;
+    background-color: var(--shadow-c);
     padding: 2rem 3rem;
     width: 632px;
     border-radius: 15px;
-    box-shadow: 4px 4px 5px 1px rgb(112, 112, 112);
+    box-shadow: 4px 4px 5px 1px var(--bx-shadow);
     font-size: 14px;
     cursor: default;
     transition: all 0.2s ease;
 }
 
 .education:hover, .experiance:hover, .short-description:hover{
-    box-shadow: 6px 6px 5px 1px rgb(112, 112, 112);
+    box-shadow: 6px 6px 5px 1px var(--bx-shadow);
     font-size: 16px ;
 }
 
@@ -294,7 +333,7 @@ nav .nav-name{
     background-color: lightgray;
     padding: 4rem;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px 1px rgb(112, 112, 112);
+    box-shadow: 5px 5px 5px 1px var(--bx-shadow);
 }
 
 .skill{
@@ -324,8 +363,9 @@ nav .nav-name{
     flex-direction: column;
     height: 500px;
     gap: 1rem;
-    box-shadow: 4px 4px 5px 1px rgb(112, 112, 112);
+    box-shadow: 4px 4px 5px 1px var(--bx-shadow);
     width: 500px;
+    background-color: var(--shadow-c);
 }
 
 .card img{
@@ -335,10 +375,10 @@ nav .nav-name{
 }
 
 .cardBtn a{
-    color: black;
+    color: var(--fc-1);
 }
 .cardBtn a:hover{
-    color: white;
+    color: var(--bgc);
 }
 
 .project-card-container{
@@ -360,12 +400,12 @@ nav .nav-name{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightgray;
+    background-color: var(--shadow-c);
     padding: 2rem 5rem;
     border-radius: 20px;
     gap: 3rem;
     font-size: 18px;
-    box-shadow: 4px 4px 5px 1px rgb(112, 112, 112);
+    box-shadow: 4px 4px 5px 1px var(--bx-shadow);
 }
 
 /* footer */
@@ -377,6 +417,7 @@ nav .nav-name{
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
+    color: var(--fc);
 }
 
 .footer-links{
