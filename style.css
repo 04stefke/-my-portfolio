@@ -402,7 +402,47 @@ nav .nav-name{
     transform: translateX(0);
 }
 
+/* light swtich */
 
+label{
+    width: 80px;
+    height: 40px;
+    position: relative;
+    display: block;
+    background-color: #ebebeb;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: inset 0px 2px 10px rgba(0, 0, 0,0.4), inset 0px -2px 10px rgba(255, 255, 255,0.4);
+    transition: all 0.2s ease;
+}
+
+label::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: linear-gradient(180deg, #ffcc89,#d8860b);
+    border-radius: 100%;
+    transition: all 0.2s ease;
+}
+
+.nav-links input{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.nav-links input:checked + label{
+    background-color: #242424;
+}
+
+.nav-links input:checked + label::after{
+    left: 15px;
+    transform: translateX(100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
 
 /* media queries */
 
@@ -424,12 +464,13 @@ nav .nav-name{
     .hamburger,
     .toggle-menu{
         display: block;
-        z-index: 3;
+        z-index: 10;
         position: fixed;
         right: 10px;
     }
     .toggle-menu{
-        z-index: 5;
+        z-index: 15;
+        height: 30px;
     }
     .nav-links{
         justify-content: start;
@@ -442,7 +483,7 @@ nav .nav-name{
         height: 100%;
         width: 300px;
         padding-top: 150px;
-    
+        z-index: 5;
     }
 }
 
