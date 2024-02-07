@@ -11,7 +11,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    
+    scroll-behavior: smooth;
 }
 
 a{
@@ -19,10 +19,9 @@ a{
     
 }
 section{
-
+    padding-top: 50px;
     margin: 2rem 16rem;
-    height: 85vh;
-    
+    height: 100vh;
 }
 
 .title{
@@ -179,7 +178,7 @@ nav .nav-name{
     align-items: center;
     justify-content: center;
     gap: 10rem;
-    height: 85vh;
+    height: 100vh;
 }
 
 .image-container img{
@@ -388,6 +387,23 @@ nav .nav-name{
     list-style: none;
 }
 
+/* animations */
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+
 /* media queries */
 
 @media screen and (max-width: 1100px) {
@@ -428,8 +444,9 @@ nav .nav-name{
         padding-top: 150px;
     
     }
-
 }
+
+
 
 @media screen and (max-width: 920px) {
     .navbar{
