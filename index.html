@@ -19,7 +19,7 @@
             <div class="nav-items">
                 <input type="checkbox" class="toggle-menu">
                 <div class="hamburger"></div>
-                <div class="nav-links">
+                <ul class="nav-links">
                     <li class="link"><a href="#home">Home</a></li>
                     <li class="link"><a href="#about">About Me</a></li>
                     <li class="link"><a href="#experiance">My Experiance</a></li>
@@ -27,7 +27,7 @@
                     <li class="link"><a href="#contact">Contact me</a></li>
                     <input type="checkbox" class="dark-mode-toggle" id="dark-mode-toggle">
                     <label for="dark-mode-toggle"></label>
-                </div>          
+                </ul>          
 
             </div>
         </div>
@@ -37,19 +37,19 @@
 
     <header id="home" class="header hidden">
         <span class="image-container">
-            <img src="images/my-portrait.webp" >
+            <img src="images/me.webp" alt="my-picture">
         </span>
         <div class="header-description">
             <div class="description">
                 <p>Welcome, I am <br><span class="my-name">Stefan Jovanovic</span><br>A Front-End Developer</p>
             </div>
             <div class="more-info">
-                <a href="https://docs.google.com/document/d/1BGfaMyDUJ0VlhLG5AumauEfI_gK5ojvx/edit?usp=drive_link&ouid=107957463588098392604&rtpof=true&sd=true"><button class="btn">Download CV</button></a>
-                <a href="https://docs.google.com/document/d/10B9aWabSl2sxth52oTAffckhhDIwHJVt/edit?usp=drive_link&ouid=107957463588098392604&rtpof=true&sd=true"><button class="btn">Contact Info</button></a>
+                <a href="https://docs.google.com/document/d/1BGfaMyDUJ0VlhLG5AumauEfI_gK5ojvx/edit?usp=drive_link&ouid=107957463588098392604&rtpof=true&sd=true" aria-label="link to my cv file"><button class="btn">Download CV</button></a>
+                <a href="https://docs.google.com/document/d/10B9aWabSl2sxth52oTAffckhhDIwHJVt/edit?usp=drive_link&ouid=107957463588098392604&rtpof=true&sd=true" aria-label="link to my contact info file"><button class="btn">Contact Info</button></a>
             </div>
             <div class="header-contact">
-                <a href="https://www.linkedin.com/in/stefan-jovanovic-73081929a/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/04stefke"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/stefan-jovanovic-73081929a/" aria-label="link to my linkedin profile"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/04stefke" aria-label="link to my github profile"><i class="fa-brands fa-square-github"></i></a>
             </div>
         </div>
     </header>
@@ -98,23 +98,27 @@
         <div class="project-wrapper">
             <div class="project-card-container">
                 <div id="card-1" class="card">
-                    <img src="/images/RedditApp.webp">
+                    <img src="/images/RedditApp.webp" alt="reddit-app">
                     <p>Reddit Clone App</p>
                     <div class="contact-btn">
-                        <a href="https://github.com/04stefke/reddit-clone-v2"><button class="btn cardBtn">
-                            <i class="fa-brands fa-github"></i>
-                        </button></a>              
-                        <a href="https://stefans-reddit-app.netlify.app"><button class="btn cardBtn">
-                            Live Demo
-                        </button></a>
+                        <a href="https://github.com/04stefke/reddit-clone-v2" aria-label="link to my github repo for the reddit app">
+                            <button class="btn cardBtn" aria-label="Github for Reddit-Clone">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>              
+                        <a href="https://stefans-reddit-app.netlify.app">
+                            <button class="btn cardBtn">
+                                Live Demo
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div id="card-2" class="card">
-                    <img src="/images/ToDoApp.webp">
+                    <img src="/images/ToDoApp.webp" alt="todo-app">
                     <p>ToDo App</p>
                     <div class="contact-btn">
-                        <a href="https://github.com/04stefke/ToDo-App">
-                            <button class="btn cardBtn">
+                        <a href="https://github.com/04stefke/ToDo-App" aria-label="link to my github repo for the to-do app">
+                            <button class="btn cardBtn" aria-label="Github for ToDo-App">
                                 <i class="fa-brands fa-github"></i>
                             </button> 
                         </a>             
@@ -126,11 +130,11 @@
                     </div>
                 </div>
                 <div id="card-3" class="card">
-                    <img src="/images/WeatherApp.webp">
+                    <img src="/images/WeatherApp.webp" alt="weather-app">
                     <p>Weather App</p>
                     <div class="contact-btn">
-                        <a href="https://github.com/04stefke/weather-app">
-                            <button class="btn cardBtn">
+                        <a href="https://github.com/04stefke/weather-app" aria-label="link to my github repo for the weather app">
+                            <button class="btn cardBtn" aria-label="Github for Weather-App">
                                 <i class="fa-brands fa-github"></i>
                             </button>
                         </a>              
@@ -142,11 +146,11 @@
                     </div>
                 </div>
                 <div id="card-4" class="card">
-                    <img src="/images/E-Commerce.webp">
+                    <img src="/images/E-Commerce.webp" alt="e-commerce-app">
                     <p>E-Commerce Home Page</p>
                     <div class="contact-btn">
-                        <a href="https://github.com/04stefke/e-commerce">
-                            <button class="btn cardBtn">
+                        <a href="https://github.com/04stefke/e-commerce" aria-label="link to my github repo for the e-commerce app">
+                            <button class="btn cardBtn" aria-label="Github for E-Commerce-App">
                             <i class="fa-brands fa-github"></i>
                             </button>
                         </a>
@@ -158,11 +162,12 @@
                     </div>
                 </div>
                 <div id="card-5" class="card">
-                    <img src="./images/QuizApp.webp">
+                    <img src="./images/QuizApp.webp" alt="quiz-app">
                     <p>Quiz App</p>
                     <div class="contact-btn">
-                        <a href="https://github.com/04stefke/jsquiz"><button class="btn cardBtn">
-                            <i class="fa-brands fa-github"></i>
+                        <a href="https://github.com/04stefke/jsquiz" aria-label="link to my github repo for the quiz app" >
+                            <button class="btn cardBtn" aria-label="Github for Quiz-App">
+                                <i class="fa-brands fa-github"></i>
                             </button>
                         </a>            
                         <a href="https://stefans-javascript-quiz.netlify.app">
