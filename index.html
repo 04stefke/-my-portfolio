@@ -1,207 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <title>My Portfolio</title>
-    <script src="https://kit.fontawesome.com/72e182a145.js" crossorigin="anonymous"></script>
-    <script defer src="script.js"></script>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<title>My Portfolio</title>
+		<script
+			src="https://kit.fontawesome.com/72e182a145.js"
+			crossorigin="anonymous"
+		></script>
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="nav-name"><span class="name">Stefan</span> Jovanovic</div>
+			<div class="hidden-menu">
+				<div class="nav-items">
+					<input type="checkbox" class="toggle-menu" />
+					<div class="hamburger"></div>
+					<ul class="nav-links">
+						<li class="link"><a href="#home">Home</a></li>
+						<li class="link"><a href="#about">About Me</a></li>
+						<li class="link"><a href="#experiance">My Experiance</a></li>
+						<li class="link"><a href="#project">My Project</a></li>
+						<li class="link"><a href="#contact">Contact me</a></li>
+						<input
+							type="checkbox"
+							class="dark-mode-toggle"
+							id="dark-mode-toggle"
+						/>
+						<label for="dark-mode-toggle"></label>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-    <nav class="navbar">
-        <div class="nav-name">
-            <span class="name">Stefan</span> Jovanovic
-        </div>
-        <div class="hidden-menu">
-            <div class="nav-items">
-                <input type="checkbox" class="toggle-menu">
-                <div class="hamburger"></div>
-                <ul class="nav-links">
-                    <li class="link"><a href="#home">Home</a></li>
-                    <li class="link"><a href="#about">About Me</a></li>
-                    <li class="link"><a href="#experiance">My Experiance</a></li>
-                    <li class="link"><a href="#project">My Project</a></li>
-                    <li class="link"><a href="#contact">Contact me</a></li>
-                    <input type="checkbox" class="dark-mode-toggle" id="dark-mode-toggle">
-                    <label for="dark-mode-toggle"></label>
-                </ul>          
+		<header id="home" class="header hidden">
+			<span class="image-container">
+				<img src="images/me.webp" alt="my-picture" />
+			</span>
+			<div class="header-description">
+				<div class="description">
+					<p>
+						Welcome, I am <br /><span class="my-name">Stefan Jovanovic</span
+						><br />A Front-End Developer
+					</p>
+				</div>
+				<div class="more-info">
+					<a
+						href="https://docs.google.com/document/d/1b_fHSCpOTMcuJPF5bjFqgr-4TbUHpYX9/edit?usp=drive_link&ouid=107957463588098392604&rtpof=true&sd=true"
+						aria-label="link to my cv file"
+						target="”_blank”"
+						><button class="btn">Download CV</button></a
+					>
+					<a
+						href="https://docs.google.com/document/d/10B9aWabSl2sxth52oTAffckhhDIwHJVt/edit?usp=drive_link&ouid=107957463588098392604&rtpof=true&sd=true"
+						aria-label="link to my contact info file"
+						target="”_blank”"
+						><button class="btn">Contact Info</button></a
+					>
+				</div>
+				<div class="header-contact">
+					<a
+						href="https://www.linkedin.com/in/stefan-jovanovic-73081929a/"
+						aria-label="link to my linkedin profile"
+						target="”_blank”"
+						><i class="fa-brands fa-linkedin"></i
+					></a>
+					<a
+						href="https://github.com/04stefke"
+						aria-label="link to my github profile"
+						target="”_blank”"
+						><i class="fa-brands fa-square-github"></i
+					></a>
+				</div>
+			</div>
+		</header>
 
-            </div>
-        </div>
+		<section id="about" class="about-me hidden">
+			<p class="aboveTitle">Get To Know More</p>
+			<div class="title"><h3>About Me</h3></div>
+			<div class="about-me-container">
+				<div class="description-container">
+					<div class="my-progress">
+						<div class="experiance">
+							<p>
+								I am a Junior Front-End developer looking to start my career.
+							</p>
+						</div>
+						<div class="education">
+							<p>
+								I have finished the Front-End Plus course and ISTQB course from
+								Learing People
+							</p>
+						</div>
+					</div>
+					<div class="short-description">
+						<p>
+							I am a young and passionate Front-End Dev. I am looking forward to
+							starting my carreer, I love transforming designs into front-end
+							interfaces
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        
-    </nav>
+		<section id="experiance" class="experiance-container hidden">
+			<div>
+				<p class="aboveTitle">Explore my</p>
+				<h3 class="title">Experiances</h3>
+			</div>
+			<div class="card-experiance">
+				<p class="skill">
+					<i class="fa-solid fa-check"></i> HTML5
+					<i class="fa-brands fa-html5"></i>
+				</p>
+				<p class="skill">
+					<i class="fa-solid fa-check"></i> CSS3
+					<i class="fa-brands fa-css3"></i>
+				</p>
+				<p class="skill">
+					<i class="fa-solid fa-check"></i> MaterialUi
+					<i class="fa-solid fa-code"></i>
+				</p>
+				<p class="skill">
+					<i class="fa-solid fa-check"></i> JavaScript
+					<i class="fa-brands fa-node-js"></i>
+				</p>
+				<p class="skill">
+					<i class="fa-solid fa-check"></i> React
+					<i class="fa-brands fa-react"></i>
+				</p>
+				<p class="skill">
+					<i class="fa-solid fa-check"></i> Redux
+					<i class="fa-brands fa-react"></i>
+				</p>
+				<p class="skill">
+					<i class="fa-solid fa-check"></i> React-testing-library
+					<i class="fa-brands fa-react"></i>
+				</p>
+				<p class="skill">
+					<i class="fa-solid fa-check"></i> Github
+					<i class="fa-brands fa-github"></i>
+				</p>
+			</div>
+		</section>
 
-    <header id="home" class="header hidden">
-        <span class="image-container">
-            <img src="images/me.webp" alt="my-picture">
-        </span>
-        <div class="header-description">
-            <div class="description">
-                <p>Welcome, I am <br><span class="my-name">Stefan Jovanovic</span><br>A Front-End Developer</p>
-            </div>
-            <div class="more-info">
-                <a href="https://docs.google.com/document/d/1BGfaMyDUJ0VlhLG5AumauEfI_gK5ojvx/edit?usp=drive_link&ouid=107957463588098392604&rtpof=true&sd=true" aria-label="link to my cv file"><button class="btn">Download CV</button></a>
-                <a href="https://docs.google.com/document/d/10B9aWabSl2sxth52oTAffckhhDIwHJVt/edit?usp=drive_link&ouid=107957463588098392604&rtpof=true&sd=true" aria-label="link to my contact info file"><button class="btn">Contact Info</button></a>
-            </div>
-            <div class="header-contact">
-                <a href="https://www.linkedin.com/in/stefan-jovanovic-73081929a/" aria-label="link to my linkedin profile"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/04stefke" aria-label="link to my github profile"><i class="fa-brands fa-square-github"></i></a>
-            </div>
-        </div>
-    </header>
+		<section id="project" class="project hidden">
+			<p class="aboveTitle">Browse My Recent</p>
+			<h3 class="title">Projects</h3>
+			<div class="project-wrapper">
+				<div class="project-card-container">
+					<div id="card-1" class="card">
+						<img src="/images/RedditApp.webp" alt="reddit-app" />
+						<p>Reddit Clone App</p>
+						<div class="contact-btn">
+							<a
+								href="https://github.com/04stefke/reddit-clone-v2"
+								aria-label="link to my github repo for the reddit app"
+								target="”_blank”"
+							>
+								<button
+									class="btn cardBtn"
+									aria-label="Github for Reddit-Clone"
+								>
+									<i class="fa-brands fa-github"></i>
+								</button>
+							</a>
+							<a
+								href="https://stefans-reddit-app.netlify.app"
+								target="”_blank”"
+							>
+								<button class="btn cardBtn">Live Demo</button>
+							</a>
+						</div>
+					</div>
+					<div id="card-2" class="card">
+						<img src="/images/ToDoApp.webp" alt="todo-app" />
+						<p>ToDo App</p>
+						<div class="contact-btn">
+							<a
+								href="https://github.com/04stefke/ToDo-App"
+								aria-label="link to my github repo for the to-do app"
+								target="”_blank”"
+							>
+								<button class="btn cardBtn" aria-label="Github for ToDo-App">
+									<i class="fa-brands fa-github"></i>
+								</button>
+							</a>
+							<a
+								href="https://stefans-to-do-app.netlify.app/"
+								target="”_blank”"
+							>
+								<button class="btn cardBtn">Live Demo</button>
+							</a>
+						</div>
+					</div>
+					<div id="card-3" class="card">
+						<img src="/images/WeatherApp.webp" alt="weather-app" />
+						<p>Weather App</p>
+						<div class="contact-btn">
+							<a
+								href="https://github.com/04stefke/weather-app"
+								aria-label="link to my github repo for the weather app"
+								target="”_blank”"
+							>
+								<button class="btn cardBtn" aria-label="Github for Weather-App">
+									<i class="fa-brands fa-github"></i>
+								</button>
+							</a>
+							<a
+								href="https://stefans-weather-app.netlify.app"
+								target="”_blank”"
+							>
+								<button class="btn cardBtn">Live Demo</button>
+							</a>
+						</div>
+					</div>
+					<div id="card-4" class="card">
+						<img src="/images/E-Commerce.webp" alt="e-commerce-app" />
+						<p>E-Commerce Home Page</p>
+						<div class="contact-btn">
+							<a
+								href="https://github.com/04stefke/e-commerce"
+								aria-label="link to my github repo for the e-commerce app"
+								target="”_blank”"
+							>
+								<button
+									class="btn cardBtn"
+									aria-label="Github for E-Commerce-App"
+								>
+									<i class="fa-brands fa-github"></i>
+								</button>
+							</a>
+							<a
+								href="https://stefans-ecommerce-project.netlify.app"
+								target="”_blank”"
+							>
+								<button class="btn cardBtn">Live Demo</button>
+							</a>
+						</div>
+					</div>
+					<div id="card-5" class="card">
+						<img src="./images/QuizApp.webp" alt="quiz-app" />
+						<p>Quiz App</p>
+						<div class="contact-btn">
+							<a
+								href="https://github.com/04stefke/jsquiz"
+								aria-label="link to my github repo for the quiz app"
+								target="”_blank”"
+							>
+								<button class="btn cardBtn" aria-label="Github for Quiz-App">
+									<i class="fa-brands fa-github"></i>
+								</button>
+							</a>
+							<a
+								href="https://stefans-javascript-quiz.netlify.app"
+								target="”_blank”"
+							>
+								<button class="btn cardBtn">Live Demo</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section id="about" class="about-me hidden">
-        <p class="aboveTitle">Get To Know More</p>
-        <div class="title"><h3>About Me</h3></div>
-        <div class="about-me-container">
-            <div class="description-container">
-                <div class="my-progress">
-                    <div class="experiance">
-                        <p>I am a Junior Front-End developer looking to start my career.</p>
-                    </div>
-                    <div class="education">
-                        <p>I have finished the Front-End Plus course and ISTQB course from Learing People</p>
-                    </div>
-                </div>
-                <div class="short-description">
-                    <p>I am a young and passionate Front-End Dev. I am looking forward to starting my carreer, I love transforming designs into front-end interfaces</p>
-                </div>
-            </div>
-        </div>
-        
-    </section>
+		<section id="contact" class="contact hidden">
+			<div>
+				<p class="aboveTitle">Get in Touch</p>
+				<h3 class="title">Contact Me</h3>
+			</div>
 
-    <section id="experiance"  class="experiance-container hidden">
-        <div>
-            <p class="aboveTitle">Explore my</p>
-            <h3 class="title">Experiances</h3>
-        </div>
-        <div class="card-experiance">
-            <p class="skill"><i class="fa-solid fa-check"></i> HTML5 <i class="fa-brands fa-html5"></i></p>
-            <p class="skill"><i class="fa-solid fa-check"></i> CSS3 <i class="fa-brands fa-css3"></i></p>
-            <p class="skill"><i class="fa-solid fa-check"></i> MaterialUi <i class="fa-solid fa-code"></i></p>
-            <p class="skill"><i class="fa-solid fa-check"></i> JavaScript <i class="fa-brands fa-node-js"></i></p>
-            <p class="skill"><i class="fa-solid fa-check"></i> React <i class="fa-brands fa-react"></i></p>
-            <p class="skill"><i class="fa-solid fa-check"></i> Redux <i class="fa-brands fa-react"></i></p>
-            <p class="skill"><i class="fa-solid fa-check"></i> React-testing-library <i class="fa-brands fa-react"></i></p>
-            <p class="skill"><i class="fa-solid fa-check"></i> Github <i class="fa-brands fa-github"></i></p>
-        </div>
-    </section>
+			<div class="contact-card">
+				<p><i class="fa-solid fa-envelope"></i> jovanovics399@gmail.com</p>
+				<p><i class="fa-brands fa-linkedin"></i> LinkedIn</p>
+			</div>
+		</section>
 
-    <section id="project"  class="project hidden">
-        <p class="aboveTitle">Browse My Recent</p>
-        <h3 class="title">Projects</h3>
-        <div class="project-wrapper">
-            <div class="project-card-container">
-                <div id="card-1" class="card">
-                    <img src="/images/RedditApp.webp" alt="reddit-app">
-                    <p>Reddit Clone App</p>
-                    <div class="contact-btn">
-                        <a href="https://github.com/04stefke/reddit-clone-v2" aria-label="link to my github repo for the reddit app">
-                            <button class="btn cardBtn" aria-label="Github for Reddit-Clone">
-                                <i class="fa-brands fa-github"></i>
-                            </button>
-                        </a>              
-                        <a href="https://stefans-reddit-app.netlify.app">
-                            <button class="btn cardBtn">
-                                Live Demo
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div id="card-2" class="card">
-                    <img src="/images/ToDoApp.webp" alt="todo-app">
-                    <p>ToDo App</p>
-                    <div class="contact-btn">
-                        <a href="https://github.com/04stefke/ToDo-App" aria-label="link to my github repo for the to-do app">
-                            <button class="btn cardBtn" aria-label="Github for ToDo-App">
-                                <i class="fa-brands fa-github"></i>
-                            </button> 
-                        </a>             
-                        <a href="https://stefans-to-do-app.netlify.app/">
-                            <button class="btn cardBtn">
-                                Live Demo
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div id="card-3" class="card">
-                    <img src="/images/WeatherApp.webp" alt="weather-app">
-                    <p>Weather App</p>
-                    <div class="contact-btn">
-                        <a href="https://github.com/04stefke/weather-app" aria-label="link to my github repo for the weather app">
-                            <button class="btn cardBtn" aria-label="Github for Weather-App">
-                                <i class="fa-brands fa-github"></i>
-                            </button>
-                        </a>              
-                        <a href="https://stefans-weather-app.netlify.app">
-                            <button class="btn cardBtn">
-                                Live Demo
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div id="card-4" class="card">
-                    <img src="/images/E-Commerce.webp" alt="e-commerce-app">
-                    <p>E-Commerce Home Page</p>
-                    <div class="contact-btn">
-                        <a href="https://github.com/04stefke/e-commerce" aria-label="link to my github repo for the e-commerce app">
-                            <button class="btn cardBtn" aria-label="Github for E-Commerce-App">
-                            <i class="fa-brands fa-github"></i>
-                            </button>
-                        </a>
-                        <a href="https://stefans-ecommerce-project.netlify.app">
-                            <button class="btn cardBtn">
-                                Live Demo
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div id="card-5" class="card">
-                    <img src="./images/QuizApp.webp" alt="quiz-app">
-                    <p>Quiz App</p>
-                    <div class="contact-btn">
-                        <a href="https://github.com/04stefke/jsquiz" aria-label="link to my github repo for the quiz app" >
-                            <button class="btn cardBtn" aria-label="Github for Quiz-App">
-                                <i class="fa-brands fa-github"></i>
-                            </button>
-                        </a>            
-                        <a href="https://stefans-javascript-quiz.netlify.app">
-                            <button class="btn cardBtn">
-                                Live Demo
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div> 
-        </div>
-    </section>
-
-    <section id="contact" class="contact hidden">
-        <div>
-            <p class="aboveTitle">Get in Touch</p>
-            <h3 class="title">Contact Me</h3>
-        </div>
-
-        <div class="contact-card">
-            <p><i class="fa-solid fa-envelope"></i> jovanovics399@gmail.com</p>
-            <p><i class="fa-brands fa-linkedin"></i> LinkedIn</p>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <ul class="footer-links">
-            <li class="footer-link"><a href="#home">Home</a></li>
-            <li class="footer-link"><a href="#about">About Me</a></li>
-            <li class="footer-link"><a href="#experiance">My Experiance</a></li>
-            <li class="footer-link"><a href="#project">My Project</a></li>
-            <li class="footer-link"><a href="#contact">Contact me</a></li>
-        </ul>
-        <p>Copyright©2024 Stefan Jovanovic. All Right Reserved.</p>
-    </footer>
-</body>
+		<footer class="footer">
+			<ul class="footer-links">
+				<li class="footer-link"><a href="#home">Home</a></li>
+				<li class="footer-link"><a href="#about">About Me</a></li>
+				<li class="footer-link"><a href="#experiance">My Experiance</a></li>
+				<li class="footer-link"><a href="#project">My Project</a></li>
+				<li class="footer-link"><a href="#contact">Contact me</a></li>
+			</ul>
+			<p>Copyright©2024 Stefan Jovanovic. All Right Reserved.</p>
+		</footer>
+	</body>
 </html>
